@@ -213,35 +213,6 @@
           }
         }
       },
-      "delete": {
-        "tags": ["grafeas"],
-        "operationId": "DeleteNote",
-        "description": "Deletes the given note from the system.",
-        "parameters": [
-          {
-            "name": "projectsId",
-            "description": "Part of `name`. The name of the note in the form\n\"projects\/{project_id}\/notes\/{note_id}\"",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "notesId",
-            "description": "Part of `name`. See documentation of `projectsId`.",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "default": {
-            "description": "Successful operation",
-            "schema": {
-              "$ref": "#/definitions/Empty"
-            }
-          }
-        }
-      },
       "put": {
         "tags": ["grafeas"],
         "operationId": "UpdateNote",
@@ -560,35 +531,6 @@
         }
       }
     },
-    "delete": {
-      "tags": ["grafeas"],
-      "operationId": "DeleteOperation",
-      "description": "Deletes the given operation from the system.",
-      "parameters": [
-        {
-          "name": "projectsId",
-          "description": "Part of `name`. The name of the note in the form\n\"projects\/{project_id}\/operations\/{operation_id}\"",
-          "in": "path",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "name": "operationsId",
-          "description": "Part of `name`. See documentation of `projectsId`.",
-          "in": "path",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "responses": {
-        "default": {
-          "description": "Successful operation",
-          "schema": {
-            "$ref": "#/definitions/Empty"
-          }
-        }
-      }
-    }
   },
   "definitions": {
     "Occurrence": {
